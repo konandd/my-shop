@@ -1,0 +1,18 @@
+.breadcrumb {
+  margin-left: 20px;
+}
+
+.bread {
+  color: #838383;
+  background-color: white;
+  border: none;
+  text-transform: capitalize;
+
+  &:hover {
+    color: #1890ff;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}

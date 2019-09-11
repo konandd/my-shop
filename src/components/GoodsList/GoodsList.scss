@@ -1,0 +1,132 @@
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: start;
+  margin: 10px 12px;
+}
+
+.item {
+  height: 398px;
+  width: 300px;
+  font-size: 16px;
+  margin: 10px 12px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 14px 0 #DCDCDC;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10px;
+    padding-right: 10px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 18px 6px silver;
+  }
+
+  a {
+    text-decoration: none;
+    padding-top: 10px;
+  }
+
+  &-none {
+    img {
+      filter: opacity(40%);
+    }
+    a {
+      filter: opacity(40%);
+    }
+    .price  {
+      filter: opacity(40%);
+    }
+  }
+}
+
+.image {
+  padding-top: 10px;
+  height: 210px;
+  width: 280px;
+}
+
+.title-wrapper {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 60px;
+  width: 300px;
+
+  span  {
+    margin-left: 10px;
+  }
+
+}
+
+.cart {
+  margin-left: 20px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background: url("../../image/shopping-cart.svg") no-repeat;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(97%) saturate(3059%) hue-rotate(190deg) brightness(101%) contrast(101%);
+  cursor: pointer;
+  transition: all linear 70ms;
+  &:hover {
+    padding: 12px 20px;
+  }
+
+  &-in {
+    margin-left: 20px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background:  url("../../image/shoping-cart-check.svg") no-repeat;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(97%) saturate(3059%) hue-rotate(190deg) brightness(101%) contrast(101%);
+    cursor: pointer;
+
+    &:hover {
+      padding: 12px 20px;
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+.stock {
+  width: 280px;
+  color: #1890ff;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.reviews {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.content {
+  width: calc(100vw - 250px);
+}

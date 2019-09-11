@@ -1,0 +1,26 @@
+.side-bar {
+  padding-top: 10px;
+  background-color: white;
+  width: 250px;
+  border-right: solid #e8e8e8 1px;
+  height: calc(100vh - 50px);
+  & a {
+    text-decoration: none;
+    display: flex;
+    color: inherit;
+    padding-left: 40px;
+    height: 30px;
+    width: 210px;
+  }
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 250px;
+  color: #838383;
+  &:hover {
+    color: #1890ff;
+  }
+}

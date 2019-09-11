@@ -1,0 +1,39 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: solid #eaeaea 1px;
+  box-shadow: 0 0 14px 1px silver;
+  transition: all linear 100ms;
+  margin: 10px 12px;
+
+  &:hover {
+    box-shadow: 0 0 20px 10px silver;
+  }
+
+  &-list {
+    display: flex;
+    height: 350px;
+    width: 280px;
+    margin: 10px 12px;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-slider {
+    margin-top: 20px;
+    margin-left: 225px;
+  }
+
+  &-name {
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
