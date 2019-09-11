@@ -2,6 +2,10 @@
   "name": "project",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.4.1",
+    "node": "10.15.3"
+  },
   "dependencies": {
     "antd": "^3.20.3",
     "history": "^4.9.0",
