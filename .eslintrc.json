@@ -1,0 +1,63 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "jsx-a11y/anchor-is-valid": 1,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "no-new": 0,
+    "no-nested-ternary": 0,
+    "camelcase": 0,
+    "linebreak-style": 0,
+    "react/no-find-dom-node": 0,
+    "react/prop-types": 0,
+    "jsx-a11y/tabindex-no-positive": 0,
+    "react/require-default-props":0,
+    "dot-notation": 0,
+    "react/jsx-no-bind": [2],
+    "react/jsx-one-expression-per-line": 0,
+    "import/prefer-default-export": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "jsx-a11y/label-has-for": 0,
+    "no-undef": 1,
+    "no-plusplus": 0,
+    "no-shadow": 0,
+    "no-param-reassign": 0,
+    "react/destructuring-assignment": [1,
+      {
+        "ignoreClassFields": true
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.spec.js"
+        ]
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ]
+  }
+}
