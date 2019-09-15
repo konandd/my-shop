@@ -41,7 +41,7 @@ class App extends Component {
           <ul className="drop-menu">
             <li>
               <button type="button" onClick={() => (this.props.history.push('/cart'))} className="cart-link" />
-              <span className="quantity">{cart.length}</span>
+              <span className="quantity">{cart === null ? '' : cart.length}</span>
               <ul className="drop">{cart.map(p => (
                 <li>{p.name}</li>))}
               </ul>

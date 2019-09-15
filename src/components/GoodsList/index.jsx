@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import StarRatings from 'react-star-ratings';
 import { getItems } from '../../redux/products/actions';
 import Breadcrumb from '../Breadcrumb';
 import './GoodsList.scss';
@@ -62,6 +64,13 @@ class GoodsList extends Component {
                 <div className="title-wrapper">
                   <Link to={`/${key}/${p.id}`}>{p.name}</Link>
                   <div className="rating">
+                    <StarRatings
+                      rating={+p.rating}
+                      numberOfStars={5}
+                      starDimension="20px"
+                      starSpacing="0px"
+                      starRatedColor="#1890ff"
+                    />
                     <div className="reviews">{p.reviews} відгуків</div>
                   </div>
                 </div>
