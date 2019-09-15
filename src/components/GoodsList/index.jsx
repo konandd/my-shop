@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-
 import { getItems } from '../../redux/products/actions';
 import Breadcrumb from '../Breadcrumb';
 import './GoodsList.scss';
