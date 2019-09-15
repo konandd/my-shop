@@ -42,7 +42,7 @@ class App extends Component {
             <li>
               <button type="button" onClick={() => (this.props.history.push('/cart'))} className="cart-link" />
               <span className="quantity">{cart === null ? '' : cart.length}</span>
-              <ul className="drop">{cart.map(p => (
+              <ul className="drop">{ cart === null ? '' : cart.map(p => (
                 <li>{p.name}</li>))}
               </ul>
             </li>
