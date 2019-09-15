@@ -2,18 +2,19 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import StarRatings from 'react-star-ratings';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { StarRatings } from 'react-star-ratings';
 import { getItems } from '../../redux/products/actions';
 import Breadcrumb from '../Breadcrumb';
 import './GoodsList.scss';
 import 'antd/dist/antd.css';
-
 import { arrSort } from '../../helper/help';
 import {
   getCart, setItem, checkCartList, getCheck,
 } from '../../redux/cart/actions';
 import Price from '../Price';
 import { showMessage } from '../../redux/message/actions';
+
 
 class GoodsList extends Component {
   constructor(props) {
