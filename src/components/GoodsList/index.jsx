@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import StarRatings from 'react-star-ratings';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -62,6 +63,13 @@ class GoodsList extends Component {
                 <div className="title-wrapper">
                   <Link to={`/${key}/${p.id}`}>{p.name}</Link>
                   <div className="rating">
+                    <StarRatings
+                      rating={parseInt(p.rating, 10)}
+                      numberOfStars={5}
+                      starDimension="20px"
+                      starSpacing="0px"
+                      starRatedColor="#1890ff"
+                    />
                     <div className="reviews">{p.reviews} відгуків</div>
                   </div>
                 </div>

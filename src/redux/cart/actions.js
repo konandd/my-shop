@@ -10,8 +10,9 @@ export const GET_CHECK = 'GET_CHECK';
 export function setItem(item, cart) {
   const newItems = [];
   item.count = 1;
-  cart === null ? newItems.push(item) : cart.slice(0)
-    .map(p => (newItems.push(p))) && newItems.push(item);
+  // eslint-disable-next-line no-unused-expressions
+  cart === null ? newItems.push(item)
+    : cart.slice(0).map(p => (newItems.push(p))) && newItems.push(item);
   localStorage.setItem('cart', JSON.stringify(newItems));
   return (dispatch) => {
     dispatch({
@@ -26,7 +27,7 @@ export function getCart() {
     const cart = JSON.parse(localStorage.getItem('cart'));
     dispatch({
       type: GET_CART,
-      payload: cart,
+      payload: cart === null ? [] : cart,
     });
   };
 }
