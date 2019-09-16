@@ -49,7 +49,7 @@ class GoodsList extends Component {
         <div className="item-top">
           <Breadcrumb history={this.props.history} name={key} />
           <select onChange={e => this.setState({ sortType: e.target.value })}>
-            <option selected value="default">Популярні</option>
+            <option value="default">Популярні</option>
             <option value="max">Від дорогих до дешевих</option>
             <option value="min">Від дешевих до дорогих</option>
           </select>
