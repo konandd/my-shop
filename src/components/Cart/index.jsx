@@ -27,7 +27,6 @@ class Cart extends Component {
           removeItem, getCart, setCount,
         },
       } = this.props;
-      const { count } = this.state;
       const a = cart === null ? 0 : cart.map(p => (+p.price));
       const totalPrice = a.reduce((partial_sum, a) => partial_sum + a, 0);
       return (

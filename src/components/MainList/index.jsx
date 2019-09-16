@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getFirms } from '../../redux/products/actions';
 import './MainList.scss';
-import Breadcrumb from '../Breadcrumb';
 import Slider from '../Slider';
 
 class MainList extends Component {
@@ -21,7 +20,6 @@ class MainList extends Component {
 
   render() {
     const { firms } = this.props;
-    console.log(firms.map(p => p.id));
     return (
       <div className="category-wrapper">
         <div className="category-slider"><Slider /></div>
